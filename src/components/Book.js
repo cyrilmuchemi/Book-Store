@@ -1,18 +1,18 @@
-import React from 'react'
+import React from 'react';
 
 export class Book extends React.PureComponent {
   render() {
     return (
-      <div className='display-books'>
+      <div className="display-books">
         <ul>
-            <li>Harry Porter</li>
+          <li>Harry Porter</li>
         </ul>
         <div>
-            <button>Remove</button>
+          <button type="button">Remove</button>
         </div>
       </div>
-    )
+    );
   }
 }
 
-export default Book
+export default Book;

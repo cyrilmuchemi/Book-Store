@@ -1,5 +1,5 @@
-import { Routes, Route } from "react-router-dom";
-import { Books } from './components/Book'
+import { Routes, Route } from 'react-router-dom';
+import { Book } from './components/Book';
 import './App.css';
 
 function App() {
@@ -7,7 +7,7 @@ function App() {
     <div className="App">
       <Routes>
         <Route>
-        <Route path="books" element={<Books />} />
+          <Route path="books" element={<Book />} />
         </Route>
       </Routes>
     </div>
