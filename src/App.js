@@ -1,5 +1,7 @@
 import { Routes, Route } from 'react-router-dom';
-import { Book } from './components/Book';
+import { Container } from './components/Container';
+import { Form } from './components/Form';
+import { Category } from './components/Category';
 import './App.css';
 
 function App() {
@@ -7,7 +9,16 @@ function App() {
     <div className="App">
       <Routes>
         <Route>
-          <Route path="books" element={<Book />} />
+          <Route
+            path="/"
+            element={(
+              <div>
+                <Container />
+                <Form />
+              </div>
+)}
+          />
+          <Route path="/Category" element={<Category />} />
         </Route>
       </Routes>
     </div>

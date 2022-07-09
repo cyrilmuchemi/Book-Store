@@ -1,6 +1,6 @@
 import React from 'react';
 
-export class Categories extends React.PureComponent {
+export class Category extends React.PureComponent {
   render() {
     return (
       <div>
@@ -10,4 +10,4 @@ export class Categories extends React.PureComponent {
   }
 }
 
-export default Categories;
+export default Category;
