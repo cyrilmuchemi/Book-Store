@@ -1,5 +1,5 @@
 import { Routes, Route } from 'react-router-dom';
-import { Container } from './components/Container';
+import Container from './components/Container';
 import Form from './components/Form';
 import { Category } from './components/Category';
 import './App.css';
