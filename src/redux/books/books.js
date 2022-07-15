@@ -12,7 +12,7 @@ export const addBook = async (book) => {
     item_id: book.id,
     title: book.title,
     author: book.author,
-    category: 'Fiction',
+    category: 'Sci-Fi',
   });
 
   const requestOptions = {
