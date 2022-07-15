@@ -10,7 +10,7 @@ export class Category extends React.PureComponent {
       dispatch(checkStatus());
     };
     return (
-      <div className='show-status'>
+      <div className="show-status">
         <h1>{status}</h1>
         <button onClick={() => { showStatus(); }} type="button">Check Status</button>
       </div>

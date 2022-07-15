@@ -23,7 +23,7 @@ export const Book = (props) => {
         <div className="progress" />
         <div>
           <p className="Percent-Complete">64%</p>
-          <p className="completed">Completed</p>
+          <p className="Completed">Completed</p>
         </div>
       </div>
       <div className="chapter">
