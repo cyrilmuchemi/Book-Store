@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-export const Book = (props) => {
-  const { author, title, category } = props.book[1][0];
-  const id = props.book[0];
+export const Book = ({ book, deleteBook }) => {
+  const { author, title, category } = book[1][0];
+  const id = book[0];
 
   return (
     <li className="book-li">
@@ -14,7 +14,7 @@ export const Book = (props) => {
         <div>
           <button className="my-button" type="button">Comments</button>
           <span className="book-space">|</span>
-          <button className="my-button" type="button" onClick={() => props.deleteBook(id)}>Remove</button>
+          <button className="my-button" type="button" onClick={() => deleteBook(id)}>Remove</button>
           <span className="book-space">|</span>
           <button className="my-button" type="button">Edit</button>
         </div>
