@@ -1,3 +1,4 @@
+/* eslint linebreak-style: ["error", "unix"] */
 import React from 'react';
 import { useSelector, useDispatch, shallowEqual } from 'react-redux';
 import { checkStatus } from '../redux/categories/categories';

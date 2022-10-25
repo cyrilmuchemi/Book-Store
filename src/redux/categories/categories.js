@@ -1,3 +1,4 @@
+/* eslint linebreak-style: ["error", "unix"] */
 const CHECK_STATUS = 'bookstore/categories/CHECK_STATUS';
 
 export const checkStatus = () => ({ type: CHECK_STATUS });

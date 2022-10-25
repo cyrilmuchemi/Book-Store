@@ -1,3 +1,4 @@
+/* eslint linebreak-style: ["error", "unix"] */
 const ADD = 'bookstore/book/ADD';
 const REMOVE = 'bookstore/book/REMOVE';
 const GET_BOOK_FROM_API = 'bookstore/book/GET_BOOK_FROM_API';
@@ -52,18 +53,14 @@ export const removeBook = async (id) => {
 };
 
 export const getBookFromApi = async (dispatch) => {
-  try {
-    const request = new Request('https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/YtVxNHXODMWZgorpP7tK/books');
-    const response = await fetch(request);
-    const res = await response.json();
+  const request = new Request('https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/YtVxNHXODMWZgorpP7tK/books');
+  const response = await fetch(request);
+  const res = await response.json();
 
-    dispatch({
-      type: GET_BOOK_FROM_API,
-      payload: res,
-    });
-  } catch (err) {
-    console.log(err);
-  }
+  dispatch({
+    type: GET_BOOK_FROM_API,
+    payload: res,
+  });
 };
 
 const bookReducer = (state = [], action) => {

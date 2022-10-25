@@ -1,3 +1,4 @@
+/* eslint linebreak-style: ["error", "unix"] */
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch, shallowEqual } from 'react-redux';
 import BookList from './BookList';

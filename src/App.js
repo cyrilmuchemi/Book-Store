@@ -1,3 +1,5 @@
+/* eslint linebreak-style: ["error", "unix"] */
+
 import { Routes, Route } from 'react-router-dom';
 import { Container } from './components/Container';
 import Form from './components/Form';

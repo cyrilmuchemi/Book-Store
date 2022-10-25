@@ -1,3 +1,4 @@
+/* eslint linebreak-style: ["error", "unix"] */
 import { createStore, combineReducers, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
 import bookReducer from './books/books';
