@@ -1,39 +1,24 @@
-import React from 'react';
-import { BookList } from './BookList';
+import React, { useEffect } from 'react';
+import { useSelector, useDispatch, shallowEqual } from 'react-redux';
+import BookList from './BookList';
+import { removeBook, getBookFromApi } from '../redux/books/books';
 
-export class Container extends React.PureComponent {
-  constructor(props) {
-    super(props);
+export const Container = () => {
+  const listing = Object.entries(useSelector((state) => state.bookReducer, shallowEqual));
 
-    this.state = {
-      books: [
-        {
-          id: 1,
-          title: 'Harry Porter',
-          author: 'J.K Rollins',
-        },
-        {
-          id: 2,
-          title: 'Hardy Boys',
-          author: 'Franklin W Dixon',
-        },
-        {
-          id: 3,
-          title: 'Twilight Eclipse',
-          author: 'Stephen Mayer',
-        },
-      ],
-    };
-  }
+  const dispatch = useDispatch();
 
-  render() {
-    const { books } = this.state;
-    return (
-      <div>
-        <BookList books={books} />
-      </div>
-    );
-  }
-}
+  useEffect(() => {
+    getBookFromApi(dispatch);
+  }, [dispatch]);
+
+  const deleteBook = (id) => {
+    removeBook(id).then((value) => { dispatch(value); });
+  };
+
+  return (
+    <BookList listing={listing} deleteBook={deleteBook} />
+  );
+};
 
 export default Container;

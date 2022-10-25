@@ -1,3 +1,235 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&family=Roboto:wght@300&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  background-color: #fff;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 42px;
+  padding-right: 42px;
+  background-color: #fff;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 18px;
+  font-family: 'Crete Round', sans-serif;
+}
+
+.headerSide {
+  display: flex;
+  align-items: center;
+}
+
+.headerSide h1 {
+  color: #0290ff;
+}
+
+.navigation-list {
+  display: flex;
+  gap: 37px;
+  list-style-type: none;
+}
+
+.book-form {
+  display: flex;
+  gap: 10px;
+}
+
+.active-link {
+  color: gray;
+}
+
+.active {
+  color: #121212;
+}
+
+.book-list {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  padding-left: 42px;
+  padding-inline-start: 40px;
+  padding-right: 42px;
+  padding-inline-end: 42px;
+}
+
+.book-li {
+  display: grid;
+  grid-template-columns: 40% 30% 30%;
+  list-style-type: none;
+  background-color: #fff;
+  border: 1px solid #e8e8e8;
+  padding: 15px;
+}
+
+.book-li h2 {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  color: #121212;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+}
+
+.author {
+  color: #4386bf;
+  font-family: 'Crete Round', sans-serif;
+  font-style: normal;
+}
+
+.book-button-actionList {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.my-button {
+  padding: 0;
+  border: none;
+  background: none;
+  color: #4386bf;
+  font-family: 'Crete, Round', sans-serif;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.add-book {
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 15px;
+  margin-bottom: 50px;
+}
+
+.add-book hr {
+  border: 1px solid #e8e8e8;
+}
+
+.add-book h2 {
+  color: #888;
+  font-size: 1.25rem;
+}
+
+.show-status {
+  margin-left: 20px;
+}
+
+.book-form input {
+  padding: 12px;
+  gap: 10px;
+}
+
+.form-title {
+  flex: 3;
+  outline: none;
+  font-size: 15px;
+}
+
+.form-author {
+  flex: 1;
+  outline: none;
+  font-size: 15px;
+}
+
+.submit-btn {
+  flex: 1;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  cursor: pointer;
+  border-radius: 3px;
+  background-color: #0290ff;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.category {
+  margin: 3px;
+  opacity: 0.5;
+  font-size: 20px;
+  font-family: 'Crete Round', sans-serif;
+  color: black;
+}
+
+.book-space {
+  color: #fff;
+  padding: 20px;
+}
+
+.progress-section {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.chapter {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.progress {
+  border: 4px solid #d3d3d3;
+  border-radius: 52%;
+  border-top: 4px solid #379cf6;
+  border-right: 4px solid #379cf6;
+  border-bottom: 4px solid #379cf6;
+  width: 4.27rem;
+  height: 4.27rem;
+  transform: rotate(40deg);
+}
+
+.Percent-Complete {
+  margin: 0.06rem 5.7rem 0 0.68rem;
+  font-size: 32px;
+  color: #121212;
+}
+
+.completed {
+  width: 5.1rem;
+  height: 1.126rem;
+  margin: 0.439rem 4.939rem 0.74rem 0.74rem;
+  opacity: 0.5;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.87rem;
+  color: #121212;
+}
+
+.Update-progress {
+  width: 12rem;
+  height: 2rem;
+  margin-left: 20px;
+  padding: 5px;
+  border-radius: 4px;
+  background-color: #0290ff;
+  font-family: 'Crete Round', sans-serif;
+  font-size: 13px;
   text-align: center;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.chapter-number {
+  margin: 0.438rem 6.813rem 0.25rem 3.688rem;
+  font-family: 'Crete Round', sans-serif;
+  font-size: 15px;
+  letter-spacing: -0.4px;
+  color: #121212;
+}
+
+.current-chapter {
+  margin: 0.065rem 3.63rem 0 3.6rem;
+  opacity: 0.5;
+  font-family: 'Crete Round', sans-serif;
+  font-size: 14px;
+  color: #121212;
 }
